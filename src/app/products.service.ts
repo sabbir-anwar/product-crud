@@ -35,4 +35,10 @@ export class ProductsService {
   editProduct(id) {  
     return this.http.get(`${this.uri}/edit/${id}`);  
   }  
+
+  deleteProduct(id) {  
+    return this  
+              .http  
+              .get(`${this.uri}/delete/${id}`);  
+  }  
 }
